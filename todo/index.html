@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Блокнот</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .completed {
+      text-decoration: line-through;
+    }
+  </style>
+  <body>
+    <h1>Список дел</h1>
+    <form id="form">
+      <input
+        type="text"
+        id="input"
+        class="input"
+        placeholder="Напиши что-нибудь"
+        autocomplete="off"
+      />
+      <ul id="todos"></ul>
+    </form>
+
+    <script src="code.js"></script>
+  </body>
+</html>
